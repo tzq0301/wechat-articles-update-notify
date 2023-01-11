@@ -1,0 +1,18 @@
+service_ids:
+  - "ali_tech" # 阿里开发者
+  - "chao-and-software" # 蔡超谈软件
+  - "chengxumiaodaren" # 程序喵大人
+  - "gh_13ffed143e4a" # CNSys
+  - "gh_f39561977251" # 董泽润的技术笔记
+  - "GolangShare" # Golang技术分享
+  - "Rude3Knife" # 后端技术漫谈
+  - "look_code_art" # loOK后端
+  - "qiyacloud" # 奇伢云存储
+  - "Tencent_TEG" # 腾讯技术工程
+  - "TechGoPaper" # TechPaper
+  - "kevin_tech" # 网管叨bi叨
+  - "gophpython" # 微客鸟窝
+  - "PassJava666" # 悟空聊架构
+  - "xiaok365" # 小K算法
+  - "gh_639fe71cc2db" # 勇哥java实战分享
+  - "gh_562cbc6dd343" # 捉虫大师
