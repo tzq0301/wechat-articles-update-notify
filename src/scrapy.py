@@ -18,6 +18,7 @@ class ArticleInfo:
 
 class Spider:
     def __init__(self, public_service_ids: List[str], email_sender: EmailSender) -> None:
+        self._public_service_ids: List[str] = public_service_ids
         self._public_service_id_to_latest_article_info: Dict[str, ArticleInfo] = dict()
         for public_service_id in public_service_ids:
             article_info: Optional[ArticleInfo] = self._get_latest_article_article_by_public_service_id(
@@ -32,7 +33,7 @@ class Spider:
     def refresh(self) -> None:
         logging.info("爬虫开始工作")
         updated_articles: List[ArticleInfo] = []
-        for public_service_id in public_service_ids:
+        for public_service_id in self._public_service_ids:
             article_info: Optional[ArticleInfo] = Spider._get_latest_article_article_by_public_service_id(
                 public_service_id)
             if not article_info:
